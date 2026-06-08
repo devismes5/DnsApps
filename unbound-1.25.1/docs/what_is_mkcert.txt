@@ -1,0 +1,20 @@
+mkcert by Filippo Valsorda is a single binary that:
+
+Creates a local Certificate Authority (CA).
+Installs that CA into every trust store it can reach (macOS, Windows, Linux, Firefox, Chrome, Java, Node).
+Generates X.509 certificates signed by that CA for any hostnames or IP addresses you specify.
+
+Create and trust the CA
+mkcert -install
+
+Create a certificate for everything you need
+mkcert localhost 127.0.0.1 ::1 mysite.test "*.mysite.test"
+
+You now have:
+
+localhost+4.pem – the certificate
+localhost+4-key.pem – the private key
+
+Point your web server at these two files and enjoy https://localhost with the green lock.
+
+https://www.blog.brightcoding.dev/2025/07/21/generate-local-ssl-certificates-and-save-localhost-a-developer-friendly-guide/

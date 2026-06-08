@@ -1,0 +1,154 @@
+@echo off
+:: Launcher script for view-unbound-log.ps1
+:: brusam, 31-5-2026
+set "SERVICE_NAME=unbound"
+set /A MAX_LOGFILES=5
+:: To remove the final backslash, you can use the :n,m substring syntax, like so:
+set "SCRIPT_DIR=%~dp0"
+:: To remove the final backslash, you can use the :n,m substring syntax
+set "SCRIPT_DIRPATH=%SCRIPT_DIR:~0,-1%"
+set "SERVICE_CONF=%SCRIPT_DIRPATH%\service.conf"
+set "LOG_FILE_PATH=%SCRIPT_DIRPATH%\unbound.log"
+:: The '@@' string will be substituted with a logfile number
+:: THere is no directory path as it is a target for the 'ren' command
+set "LOG_FILE_NAME_N=unbound-@@.log"
+
+:: Check configuration
+"%SCRIPT_DIRPATH%\unbound-checkconf" %SERVICE_CONF% >nul
+
+if errorlevel 0 (
+  echo No errors in %SERVICE_CONF%
+) else (
+  echo Cannot proceed because of unbound-checkconf errors in %SERVICE_CONF% >&2
+  exit /b %ERRORLEVEL%
+)
+
+:: Check if service is running
+call:is_service_running "%SERVICE_NAME%"
+set /A SVC_IS_RUNNING=%ERRORLEVEL%
+echo Is service '%SERVICE_NAME%' running? %SVC_IS_RUNNING%
+
+:flush_zone_and_stop_service
+if %SVC_IS_RUNNING% == 1 (
+	echo Flushing zone cache...
+	"%SCRIPT_DIRPATH%\unbound-control.exe" -c "%SERVICE_CONF%" flush_zone .
+	if not errorlevel 0 (
+	  echo Cannot proceed because of zone cache errors >&2
+	  exit /b %ERRORLEVEL%
+	)
+
+	:: Stop the Windows service
+	echo Stopping %SERVICE_NAME%...
+	net stop %SERVICE_NAME%
+	:: Wait 3 secs
+	timeout /t 3 /nobreak >nul
+)
+
+:: Rotating logs
+echo Rotating Unbound log...
+for /f "delims=" %%G in ('dir *.log /B ^| find /v /c ""') do call:rotate_logfiles %%G
+echo After call:rotate_logfiles %ERRORLEVEL%
+
+:: Start the Windows service instead of using unbound-control
+:start_service
+echo Starting %SERVICE_NAME%...
+net start %SERVICE_NAME%
+
+:: Wait 5 secs
+echo Waiting for service to start...
+timeout /t 5 /nobreak >nul
+
+:: Tail the log file displaying humand-readable timestamps
+echo.
+echo Log (local time):
+powershell -ExecutionPolicy Bypass -File "%SCRIPT_DIRPATH%\view-unbound-log.ps1"
+echo.
+echo Done!
+:eof
+exit /B %ERRORLEVEL%
+
+::
+:: Rotating logs
+:: Count the log files in the bare dir list
+:: Parameter: number of log files unbound.log, unbound-1.log, unbound-2.log,...
+:: If there are several files, we are starting at the top of the list, which makes it easy to rename any *-N.log file to *N+1.log
+::
+:rotate_logfiles
+echo In rotate_logfiles
+if not exist %LOG_FILE_PATH% (
+  echo Log file '%LOG_FILE_PATH%' not found; skipping log rotation
+  exit /b  0
+)
+setlocal
+set /A num_files=%~1
+echo Got num_files %num_files%
+if %num_files% == 0 (
+  echo 'No log files found'
+  exit /b 0
+)
+call:rotate_numbered_logfiles %num_files%
+::> "%SCRIPT_DIRPATH%\unbound.log" echo.
+endlocal
+exit /b 0
+
+:rotate_numbered_logfiles
+echo In rotate_numbered_logfiles
+setlocal
+set /A file_num=%~1
+echo Rotate file #%file_num%
+call set "numbered_logfile=%%LOG_FILE_NAME_N:@@=%file_num%%%"
+echo logfile#%file_num% %numbered_logfile%
+
+set "numbered_logfile_path=%SCRIPT_DIRPATH%\%numbered_logfile%"
+
+if exist "%numbered_logfile_path%" (
+  echo File path '%numbered_logfile_path%' exists
+  set /A next_num=file_num+1
+  echo Got next_num %next_num%
+  ::
+  :: If an LN-numbered file exists, move it to the LNN file
+  :: If MAX_LOGFILES is reached delete the last, the one with number MAX_LOGFILES-1
+  :: e.g. if 5 max, and we have unbound.log, unbound-1.log, ..., unbound-4.log: 4 numbered, 1 unnumbered
+  :: delete unbound-4.log and rename the other logfiles N -> N+1 as usual.
+  ::
+  if %next_num% == %MAX_LOGFILES% (
+	echo Deleting '%numbered_logfile_path%' as there are enough %MAX_LOGFILES% files already
+    del "%numbered_logfile_path%"
+    exit /b %ERRORLEVEL%
+  )
+  call set "next_numbered_logfile=%%LOG_FILE_NAME_N:@@=%next_num%%%"
+  echo Renaming '%numbered_logfile_path%' to '%next_numbered_logfile%'
+  ren "%numbered_logfile_path%" "%next_numbered_logfile%"
+  if not errorlevel 0 (
+    echo Cannot proceed because of renaming errors
+    exit /b %ERRORLEVEL%
+  )
+)
+:: Check if we need to recurse
+set /A prev_num=file_num-1
+echo Got prev_num %prev_num%
+if not %prev_num% == 0 call:rotate_numbered_logfiles %prev_num%
+:: If 0 reached, move the unnumbered file to the numbered one
+echo Moving %LOG_FILE_PATH% to %numbered_logfile%
+ren "%LOG_FILE_PATH%" "%numbered_logfile%"
+if not errorlevel 0 (
+  echo Cannot proceed because of errors while moving
+  exit /b %ERRORLEVEL%
+)
+endlocal
+exit /b 0
+
+:is_service_running
+setlocal
+set "svc_name=%~1"
+::sc query "%svc_name%
+for /F "tokens=3,4 delims=: " %%A in ('sc query "%svc_name%" ^| findstr "        STATE"') do (
+  echo Service status %%A
+  if /I "%%A" == "RUNNING" (
+    echo Service is running
+	exit /b 1 :: yes
+  )
+  exit /b 0:: no
+)
+endlocal
+exit /b -1 :: no services found for the given name

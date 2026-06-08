@@ -1,0 +1,594 @@
+[1780860781] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] notice: init module 0: validator
+[1780860781] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] notice: init module 1: iterator
+[1780860781] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: start of service (unbound 1.25.1).
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving accounts.google.com. HTTPS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving accounts.google.com. A IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for accounts.google.com. A IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: prime trust anchor
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: generate keytag query _ta-4f66-9728. NULL IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving . DNSKEY IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving _ta-4f66-9728. NULL IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for . DNSKEY IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validate keys with anchor(DS): sec_status_secure
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Successfully primed trust anchor . DNSKEY IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving com. DS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for _ta-4f66-9728. NULL IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was NXDOMAIN ANSWER
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for com. DS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS com. DS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving com. DNSKEY IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for com. DNSKEY IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY com. DNSKEY IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving google.com. DS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for google.com. DS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for accounts.google.com. HTTPS IN
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860788] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving wpad.speedport.ip. A IN
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving cdn.verifrom.net. HTTPS IN
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving cdn.verifrom.net. A IN
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for wpad.speedport.ip. A IN
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was NXDOMAIN ANSWER
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validate(nxdomain): sec_status_secure
+[1780860794] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validation success wpad.speedport.ip. A IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for cdn.verifrom.net. A IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving net. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for net. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS net. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving net. DNSKEY IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for net. DNSKEY IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY net. DNSKEY IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving verifrom.net. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for verifrom.net. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for cdn.verifrom.net. HTTPS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving vrf01.signal-spam.fr. HTTPS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving vrf01.signal-spam.fr. A IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for vrf01.signal-spam.fr. HTTPS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving fr. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for fr. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS fr. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving fr. DNSKEY IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for fr. DNSKEY IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY fr. DNSKEY IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving signal-spam.fr. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for signal-spam.fr. DS IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for vrf01.signal-spam.fr. A IN
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860795] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving consumer.cloud.gist.build. HTTPS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving consumer.cloud.gist.build. A IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for consumer.cloud.gist.build. HTTPS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving build. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for build. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS build. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving build. DNSKEY IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving waa-pa.clients6.google.com. HTTPS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving waa-pa.clients6.google.com. A IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for consumer.cloud.gist.build. A IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS build. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for build. DNSKEY IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY build. DNSKEY IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY build. DNSKEY IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gist.build. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for gist.build. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for waa-pa.clients6.google.com. HTTPS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving google.com. DS IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for waa-pa.clients6.google.com. A IN
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860813] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons.gcp.gvt2.com. HTTPS IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons.gcp.gvt2.com. A IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons.gcp.gvt2.com. HTTPS IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons.gcp.gvt2.com. HTTPS IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons.gcp.gvt2.com. A IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons.gcp.gvt2.com. A IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons.gcp.gvt2.com. HTTPS IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gvt2.com. DS IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons.gcp.gvt2.com. A IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for gvt2.com. DS IN
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860822] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving e2c60.gcp.gvt2.com. HTTPS IN
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving e2c60.gcp.gvt2.com. A IN
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for e2c60.gcp.gvt2.com. A IN
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gvt2.com. DS IN
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for e2c60.gcp.gvt2.com. HTTPS IN
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860823] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving bolt.dropbox.com. HTTPS IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving bolt.dropbox.com. A IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for bolt.dropbox.com. HTTPS IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving bolt.dropbox.com. HTTPS IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for bolt.dropbox.com. HTTPS IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dropbox.com. DS IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for dropbox.com. DS IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for bolt.dropbox.com. A IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving bolt.dropbox.com. A IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for bolt.dropbox.com. A IN
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860831] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving ssl.gstatic.com. HTTPS IN
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving ssl.gstatic.com. A IN
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for ssl.gstatic.com. A IN
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gstatic.com. DS IN
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for gstatic.com. DS IN
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for ssl.gstatic.com. HTTPS IN
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860845] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. HTTPS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. A IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. HTTPS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. HTTPS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. A IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. A IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. A IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving org. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for org. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS org. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving org. DNSKEY IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for org. DNSKEY IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY org. DNSKEY IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving letsencrypt.org. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for letsencrypt.org. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving hosted-by-discourse.com. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for hosted-by-discourse.com. DS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. HTTPS IN
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860846] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons.gvt2.com. HTTPS IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons.gvt2.com. A IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons.gvt2.com. A IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gvt2.com. DS IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons.gvt2.com. HTTPS IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving e2c81.gcp.gvt2.com. HTTPS IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving e2c81.gcp.gvt2.com. A IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for e2c81.gcp.gvt2.com. A IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for e2c81.gcp.gvt2.com. HTTPS IN
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860853] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons2.gvt2.com. HTTPS IN
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving beacons2.gvt2.com. A IN
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons2.gvt2.com. A IN
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gvt2.com. DS IN
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for beacons2.gvt2.com. HTTPS IN
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860856] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving c.pki.goog. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for c.pki.goog. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving c.pki.goog. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for c.pki.goog. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving goog. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for goog. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS goog. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving goog. DNSKEY IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for goog. DNSKEY IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY goog. DNSKEY IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving pki.goog. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for pki.goog. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS pki.goog. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving pki.goog. DNSKEY IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for pki.goog. DNSKEY IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY pki.goog. DNSKEY IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validate(cname): sec_status_secure
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving google.com. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving x1.c.lencr.org. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for x1.c.lencr.org. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving x1.c.lencr.org. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for x1.c.lencr.org. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving x1.c.lencr.org. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for x1.c.lencr.org. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving lencr.org. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for lencr.org. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving edgekey.net. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for edgekey.net. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving akamaiedge.net. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for akamaiedge.net. DS IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving ctldl.windowsupdate.com. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for ctldl.windowsupdate.com. A IN
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860869] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving ctldl.windowsupdate.com. A IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for ctldl.windowsupdate.com. A IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving ctldl.windowsupdate.com. A IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for ctldl.windowsupdate.com. A IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving ctldl.windowsupdate.com. A IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for ctldl.windowsupdate.com. A IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving windowsupdate.com. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for windowsupdate.com. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving microsoft.com. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for microsoft.com. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving trafficmanager.net. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for trafficmanager.net. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving co. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for co. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS co. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving co. DNSKEY IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for co. DNSKEY IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY co. DNSKEY IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving gcdn.co. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for gcdn.co. DS IN
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860870] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving play.google.com. HTTPS IN
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving play.google.com. A IN
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for play.google.com. HTTPS IN
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving google.com. DS IN
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for play.google.com. A IN
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860933] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving pagead2.googlesyndication.com. HTTPS IN
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving pagead2.googlesyndication.com. A IN
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for pagead2.googlesyndication.com. HTTPS IN
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving googlesyndication.com. DS IN
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for pagead2.googlesyndication.com. A IN
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for googlesyndication.com. DS IN
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860966] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving iad.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving iad.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for iad.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dropbox.com. DS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dfw.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for dfw.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dfw.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for dfw.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for iad.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving fra.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving fra.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for fra.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving nrt.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for nrt.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving nrt.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for fra.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for nrt.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.dropbox.com. A IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dropbox-dns.com. DS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for dropbox-dns.com. DS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DS dropbox-dns.com. DS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dropbox-dns.com. DNSKEY IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for dropbox-dns.com. DNSKEY IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validated DNSKEY dropbox-dns.com. DNSKEY IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validate(positive): sec_status_secure
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.dropbox.com. HTTPS IN
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: validate(cname_noanswer): sec_status_secure
+[1780860971] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] error: tcp send r: Software caused connection abort. for 127.0.0.1 port 7422
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving safebrowsing.googleapis.com. HTTPS IN
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving safebrowsing.googleapis.com. A IN
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for safebrowsing.googleapis.com. A IN
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving googleapis.com. DS IN
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for safebrowsing.googleapis.com. HTTPS IN
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for googleapis.com. DS IN
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861058] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving pay.google.com. HTTPS IN
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving pay.google.com. A IN
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for pay.google.com. A IN
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving google.com. DS IN
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for pay.google.com. HTTPS IN
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861113] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.msftconnecttest.com. A IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.msftconnecttest.com. A IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.msftconnecttest.com. A IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.msftconnecttest.com. A IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving www.msftconnecttest.com. A IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for www.msftconnecttest.com. A IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving msftconnecttest.com. DS IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for msftconnecttest.com. DS IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving edgesuite.net. DS IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for edgesuite.net. DS IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving akamai.net. DS IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for akamai.net. DS IN
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861142] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. HTTPS IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. A IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. HTTPS IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. HTTPS IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. HTTPS IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> 127.0.0.1#5353
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving letsencrypt.org. DS IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving hosted-by-discourse.com. DS IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. A IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was CNAME
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving community.letsencrypt.org. A IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for community.letsencrypt.org. A IN
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861151] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was ANSWER
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving bolt.dropbox.com. HTTPS IN
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving bolt.dropbox.com. HTTPS IN
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: response for bolt.dropbox.com. HTTPS IN
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: reply from <.> ::1#5353
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: query response was nodata ANSWER
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: resolving dropbox.com. DS IN
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: NSEC3s for the referral proved no DS.
+[1780861155] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:5] info: Verified that unsigned response is INSECURE
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: control cmd:  flush_zone .
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: service stopped (unbound 1.25.1).
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 0: 0 queries, 0 answers from cache, 0 recursions, 0 prefetch, 0 rejected by ip ratelimiting
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 0: requestlist max 0 avg 0 exceeded 0 jostled 0
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: mesh has 0 recursion states (0 with reply, 0 detached), 0 waiting replies, 0 recursion replies sent, 0 replies dropped, 0 states jostled out
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 1: 0 queries, 0 answers from cache, 0 recursions, 0 prefetch, 0 rejected by ip ratelimiting
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 1: requestlist max 0 avg 0 exceeded 0 jostled 0
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: mesh has 0 recursion states (0 with reply, 0 detached), 0 waiting replies, 0 recursion replies sent, 0 replies dropped, 0 states jostled out
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 2: 0 queries, 0 answers from cache, 0 recursions, 0 prefetch, 0 rejected by ip ratelimiting
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 2: requestlist max 0 avg 0 exceeded 0 jostled 0
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: mesh has 0 recursion states (0 with reply, 0 detached), 0 waiting replies, 0 recursion replies sent, 0 replies dropped, 0 states jostled out
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 3: 0 queries, 0 answers from cache, 0 recursions, 0 prefetch, 0 rejected by ip ratelimiting
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 3: requestlist max 0 avg 0 exceeded 0 jostled 0
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: mesh has 0 recursion states (0 with reply, 0 detached), 0 waiting replies, 0 recursion replies sent, 0 replies dropped, 0 states jostled out
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 4: 0 queries, 0 answers from cache, 0 recursions, 0 prefetch, 0 rejected by ip ratelimiting
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 4: requestlist max 0 avg 0 exceeded 0 jostled 0
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: mesh has 0 recursion states (0 with reply, 0 detached), 0 waiting replies, 0 recursion replies sent, 0 replies dropped, 0 states jostled out
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 5: 60 queries, 5 answers from cache, 55 recursions, 0 prefetch, 0 rejected by ip ratelimiting
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: server stats for thread 5: requestlist max 4 avg 0.709091 exceeded 0 jostled 0
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: mesh has 0 recursion states (0 with reply, 0 detached), 0 waiting replies, 52 recursion replies sent, 0 replies dropped, 0 states jostled out
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: average recursion processing time 0.097500 sec
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: histogram of recursion processing times
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: [25%]=0.0364089 median[50%]=0.086016 [75%]=0.152917
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info: lower(secs) upper(secs) recursions
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.000512    0.001024 1
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.001024    0.002048 5
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.002048    0.004096 3
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.004096    0.008192 1
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.016384    0.032768 2
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.032768    0.065536 9
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.065536    0.131072 16
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.131072    0.262144 12
+[1780861160] C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe[16832:0] info:    0.262144    0.524288 3

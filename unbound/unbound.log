@@ -1,0 +1,9 @@
+ 
+[1780938971] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:0] info: start of service (unbound 1.25.1).
+[1780939031] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for 127.0.0.1 port 12896
+[1780939031] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for 127.0.0.1 port 8753
+[1780939033] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for 127.0.0.1 port 1997
+[1780939036] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for ::1 port 14286
+[1780939052] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for ::1 port 13483
+[1780939052] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for ::1 port 14816
+[1780939091] C:\AppDevProjects\DnsApps\unbound\unbound.exe[30240:4] error: tcp send r: Software caused connection abort. for 127.0.0.1 port 10003

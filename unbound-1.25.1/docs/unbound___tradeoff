@@ -1,0 +1,124 @@
+## From the log [NOTICE] :
+##  [quad9-dnscrypt-ip6-filter-pri] TIMEOUT
+##  [dnscry.pt-dusseldorf-ipv6] TIMEOUT
+##  [quad9-dnscrypt-ip6-filter-ecs-pri] TIMEOUT
+##  [dnscry.pt-frankfurt-ipv6] TIMEOUT
+##  [dnscry.pt-dusseldorf02-ipv6] TIMEOUT
+##  Sorted latencies:
+##     35ms dnscry.pt-dusseldorf02-ipv4
+##     35ms dnsforge.de
+##     40ms dnscry.pt-dusseldorf-ipv4
+##     50ms quad9-dnscrypt-ip4-filter-ecs-pri
+##     56ms dnscry.pt-frankfurt-ipv4
+##     61ms quad9-dnscrypt-ip4-filter-pri
+#
+##     33ms dnsforge.de
+##     36ms cs-dus
+##     42ms dnscry.pt-dusseldorf02-ipv4
+##     49ms dnscry.pt-dusseldorf-ipv4
+##     59ms cs-de
+#
+##     34ms cs-de
+##     34ms dnsforge.de
+##     46ms cs-dus
+##     46ms dct-de2
+##     58ms dnscry.pt-dusseldorf02-ipv4
+##     63ms dnscry.pt-dusseldorf-ipv4
+#
+##     31ms cs-dus
+##     35ms dnsforge.de
+##     45ms dnscry.pt-dusseldorf-ipv4
+##     57ms cs-de
+##     70ms dnscry.pt-dusseldorf02-ipv4
+##     70ms dct-de2
+
+
+
+[2026-05-30 22:51:10] [NOTICE] Sorted latencies:
+[2026-05-30 22:51:10] [NOTICE] -    34ms dnscry.pt-dusseldorf02-ipv4
+[2026-05-30 22:51:10] [NOTICE] -    38ms dnsforge.de
+[2026-05-30 22:51:10] [NOTICE] -    41ms cs-dus
+[2026-05-30 22:51:10] [NOTICE] -    48ms dnscry.pt-dusseldorf-ipv4
+[2026-05-30 22:51:10] [NOTICE] -    61ms cs-de
+
+[2026-05-30 22:57:18] [NOTICE] Sorted latencies:
+[2026-05-30 22:57:18] [NOTICE] -    53ms cs-dus
+[2026-05-30 22:57:18] [NOTICE] -    53ms cs-de
+[2026-05-30 22:57:18] [NOTICE] -    57ms dnscry.pt-dusseldorf02-ipv4
+[2026-05-30 22:57:18] [NOTICE] -    65ms dnscry.pt-dusseldorf-ipv4
+[2026-05-30 22:57:18] [NOTICE] -    75ms dnsforge.de
+
+[2026-05-31 00:40:01] [NOTICE] Sorted latencies:
+[2026-05-31 00:40:01] [NOTICE] -    34ms dnsforge.de
+[2026-05-31 00:40:01] [NOTICE] -    35ms cs-de
+[2026-05-31 00:40:01] [NOTICE] -    40ms dnscry.pt-dusseldorf-ipv4
+[2026-05-31 00:40:01] [NOTICE] -    48ms cs-dus
+[2026-05-31 00:40:01] [NOTICE] -    58ms dnscry.pt-dusseldorf02-ipv4
+  #'dnsforge.de-nofilter',
+  #'dnsforge.de-nofilter-ipv6',
+  #'dnscry.pt-frankfurt-ipv4',      # https://bero-host.de/ Rechenzentrum: Offenbach am Main
+  ###'dnscry.pt-dusseldorf02-ipv6',
+  ###'dnscry.pt-dusseldorf-ipv6',
+  ###'dnscry.pt-frankfurt-ipv6',
+  ###'dnsforge.de-ipv6',
+  ###'quad9-dnscrypt-ip4-filter-ecs-pri'
+  ###'quad9-dnscrypt-ip4-filter-pri',
+  ###'quad9-dnscrypt-ip6-filter-pri',
+  ###'quad9-dnscrypt-ip6-filter-ecs-pri'
+  
+ Should I use Unbound (recursive) or dnscrypt‑proxy (encrypted forwarding) for maximum privacy?
+# For maximum privacy, running Unbound as a local, validating recursive resolver is
+# generally the stronger choice because it minimizes trust placed in third‑party DNS
+# providers and validates answers with DNSSEC, keeping most metadata on your network
+# rather than with an external resolver [1][2]. Encrypted forwarding with
+# dnscrypt‑proxy gives confidentiality on the wire to a chosen provider and useful
+# + anonymity/rotation features, but it shifts trust to that provider and therefore can
+# be worse for end‑to‑end privacy if you care about exposure to external parties
+#
+# You must first understand the important difference (with lots of people trying to
+# pretend it doesn't exist) between securing the transport (where DoH/DoT come into play)
+# and securing the content (Where DNSSEC comes into play). When you talk about security
+# and "beneficial" you need to list first what you are trying to protect yourself against?
+# Do you want people (ex: ISP) not to snoop on your DNS traffic? Then you might need DoH/DoT.
+# Do you want to have guarantees on data received? You need DNSSEC. And you can do both. – 
+# Patrick Mevzek Sep 13, 2022
+  
+https://factually.co/fact-checks/electronics-tech/unbound-vs-dnscrypt-proxy-which-for-maximum-privacy-d32246
+Should I use Unbound (recursive) or dnscrypt-proxy (encrypted forwarding) for maximum privacy?
+
+Executive summary
+
+For maximum privacy, running Unbound as a local, validating recursive resolver is generally the stronger choice because it minimizes trust placed in third‑party DNS providers and validates answers with DNSSEC, keeping most metadata on your network rather than with an external resolver [1][2]. Encrypted forwarding with dnscrypt-proxy gives confidentiality on the wire to a chosen provider and useful anonymity/rotation features, but it shifts trust to that provider and therefore can be worse for end-to-end privacy if you care about exposure to external parties [3][4].
+
+1) Trust model and privacy tradeoffs
+
+The core privacy difference is who you trust: Unbound performs recursive resolution locally and therefore avoids sending all queries to a third‑party operator, meaning you don't have to trust an external resolver's logging and retention policies [1][4]. By contrast, dnscrypt‑proxy encrypts DNS transport to external DoH/DoT/DNSCrypt providers—protecting queries from ISP eavesdropping on the wire—but requires trusting those chosen providers and any relays you enable [3][4].
+
+You get the facts without the spin
+Factually is independent and ad-free because people like you choose to support it. If you find it useful, consider supporting it. You are not just donating money. You are helping preserve a place that values facts and truth.
+
+Join James, M. Ayanian, Lynn Gallagher and 755 others
+
+2) Encryption and attack surface
+
+If your adversary is a local network or ISP eavesdropper, dnscrypt‑proxy's encrypted forwarding (DoH/DoT/DNSCrypt) prevents passive interception between your network and the provider, which Unbound running over plain UDP/53 will not by default [2][3]. Unbound can be configured to use DoT/DoH for upstreams, however, and supports TLS-based transports when you choose to forward, so encryption is possible with Unbound too — but once you forward you again place trust in that upstream provider [2][4].
+
+3) Integrity and DNSSEC
+
+Unbound emphasizes validation and integrity: running your own recursive resolver lets you validate DNSSEC signatures and obtain answers directly from authoritative servers, reducing risk of tampered responses and making returned IPs more trustworthy [2][1]. Using dnscrypt‑proxy to forward to a DNSSEC-aware provider can still get validated records, but that validation occurs at the provider rather than under your direct control [3][4].
+
+4) Practical performance and reliability
+
+Users report Unbound is lightweight and performant even on low‑end hardware (Pi devices) because it caches results and queries root servers directly, giving fast, fresh responses without relying on external provider availability [5][1]. dnscrypt-proxy can be fast and stable depending on chosen providers and offers extras like provider rotation and anonymized relays, but performance becomes provider‑dependent and you add another network hop [2][6].
+
+5) Common complaints from real users
+
+Common community feedback is that encrypting DNS alone is not a panacea — it doesn't hide destination servers from your ISP if other traffic is unencrypted, and it introduces an additional party you must trust if you forward [5][3]. Users also describe combining tools (Unbound + dnscrypt‑proxy or Unbound + stubby) to get both local validation and encrypted upstreams as a pragmatic compromise, though chaining increases complexity [7][8].
+
+6) Best for — recommendations by use case
+
+If your priority is minimizing external trust and maximizing control and integrity (e.g., privacy‑conscious home lab, Pi‑hole users), choose Unbound as a recursive, DNSSEC‑validating resolver and run it locally [4][1]. If your main threat is an on‑path ISP or local network attacker and you want simple confidentiality with anonymity features (rotation, relays), dnscrypt-proxy pointed at vetted, no‑log providers is a practical choice [3][6]. For most privacy-focused users the optimal setup is hybrid: Unbound locally for recursion and DNSSEC, configured to use encrypted upstreams or dnscrypt-proxy for anything you specifically want hidden or anonymized [6][4].
+
+Bottom line
+
+Run Unbound as your primary resolver for maximum privacy and integrity because it minimizes external trust and performs DNSSEC validation locally; add dnscrypt-proxy or configure Unbound to use DoH/DoT only when you have a clear need to hide queries from your ISP or when you want the anonymity/rotation features of specific providers, but be conscious you then trade some of Unbound's trust advantage for encrypted forwarding [1][3][4]. In short: prefer Unbound local recursion first, use dnscrypt-proxy selectively for encryption/anonymity.

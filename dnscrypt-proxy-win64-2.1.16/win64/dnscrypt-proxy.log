@@ -1,0 +1,32 @@
+[2026-06-08 18:38:48] [NOTICE] dnscrypt-proxy 2.1.16
+[2026-06-08 18:38:48] [NOTICE] Network connectivity detected
+[2026-06-08 18:38:48] [NOTICE] Now listening to 127.0.0.1:5353 [UDP]
+[2026-06-08 18:38:48] [NOTICE] Now listening to 127.0.0.1:5353 [TCP]
+[2026-06-08 18:38:48] [NOTICE] Now listening to [::1]:5353 [UDP]
+[2026-06-08 18:38:48] [NOTICE] Now listening to [::1]:5353 [TCP]
+[2026-06-08 18:38:48] [NOTICE] Now listening to https://127.0.0.1:3000/dns-query [DoH]
+[2026-06-08 18:38:48] [NOTICE] Source [public-resolvers] loaded
+[2026-06-08 18:38:48] [NOTICE] Source [relays] loaded
+[2026-06-08 18:38:48] [NOTICE] dnscrypt-proxy service is not usable yet
+[2026-06-08 18:38:48] [NOTICE] Resolving server host [www.dnscry.pt] using bootstrap resolvers over udp
+[2026-06-08 18:38:49] [NOTICE] Source [dnscry-pt-resolvers] loaded
+[2026-06-08 18:38:49] [NOTICE] Anonymized DNS: routing [cs-de] via [sdns://gQ8xNDYuNzAuODIuMzo0NDM sdns://gQ00NS4xNDcuNTEuMTIz]
+[2026-06-08 18:38:49] [NOTICE] Anonymized DNS: routing [cs-dus] via [sdns://gRI4OS4xNjMuMjIxLjE4MTo0NDM sdns://gQw5My45NS4xMTUuMjE sdns://gRExODUuMTA3LjgwLjg0OjQ0Mw sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
+[2026-06-08 18:38:49] [NOTICE] Anonymized DNS: routing [dct-de2] via [sdns://gRIyMTIuNDcuMjI4LjEzNjo0NDM sdns://gRMxNjMuMTcyLjE4MC4xMjU6NDQz sdns://gQw5My45NS4xMTUuMjE]
+[2026-06-08 18:38:49] [NOTICE] Anonymized DNS: routing [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU sdns://gQw5My45NS4xMTUuMjE]
+[2026-06-08 18:38:49] [NOTICE] Anonymized DNS: routing everything else via [sdns://AQcAAAAAAAAADTUuMTc1LjE4MC4xNzEg_5w5GH6bnmpKPcqtR58x5VHe2qD5-mSZeGIsqaukhr4ZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA sdns://AQcAAAAAAAAADTM3LjExNC41OC4xMTUgWAo_MyYybZGGBQKsA41WpC5TjjpfvgviHteGEKBXNIwZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA sdns://AQcAAAAAAAAADTExOC45MS4xODQuODkgBVOdxEWkG9yUyaviAaCbPJMqAG36WK_rVLkYvKSqCgwZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA]
+[2026-06-08 18:38:49] [NOTICE] Firefox workaround initialized
+[2026-06-08 18:38:49] [NOTICE] Hot reload is disabled
+[2026-06-08 18:38:49] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU]
+[2026-06-08 18:38:49] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gQw5My45NS4xMTUuMjE]
+[2026-06-08 18:38:49] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
+[2026-06-08 18:38:49] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ00NS4xNDcuNTEuMTIz]
+[2026-06-08 18:38:49] [NOTICE] [dnscry.pt-luxembourg-ipv4] OK (DNSCrypt) - rtt: 39ms
+[2026-06-08 18:38:49] [NOTICE] [cs-de] OK (DNSCrypt) - rtt: 56ms
+[2026-06-08 18:38:49] [NOTICE] [cs-dus] OK (DNSCrypt) - rtt: 70ms
+[2026-06-08 18:38:54] [NOTICE] [dct-de2] OK (DNSCrypt) - rtt: 51ms
+[2026-06-08 18:38:54] [NOTICE] Sorted latencies:
+[2026-06-08 18:38:54] [NOTICE] -    39ms dnscry.pt-luxembourg-ipv4
+[2026-06-08 18:38:54] [NOTICE] -    56ms cs-de
+[2026-06-08 18:38:54] [NOTICE] -    70ms cs-dus
+[2026-06-08 18:38:54] [NOTICE] Server with the lowest initial latency: dnscry.pt-luxembourg-ipv4 (rtt: 39ms), live servers: 3

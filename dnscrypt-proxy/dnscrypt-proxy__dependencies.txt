@@ -1,0 +1,97 @@
+START-UP CONSIDERATIONS
+
+
+1) Start and Stop the Service to got the appropriate Events in the Eventlog.
+
+2) taskschd.msc and create a new Costum Task. As Trigger you can select the Events created before with the start and/or stop action.
+
+3) As Action call your cmd/bat, whatever you want.
+
+Hint: You also can export the Event in the XML Format, explained here: http://blogs.technet.com/b/askds/archive/2011/09/26/advanced-xml-filtering-in-the-windows-event-viewer.aspx and then import the XML Snippet into the Scheduld Task.
+
+
+
+
+The service sc qc dnscrypt-proxy needs to start unbound as a dependency after Windows startup.
+
+dnscrypt-proxy is defined as a AUTO_START  (DELAYED) service.
+unbound        is defined as a DEMAND_START service.
+
+powershell -ExecutionPolicy Bypass Get-NetTCPConnection -LocalPort 53
+
+LocalAddress                        LocalPort RemoteAddress                       RemotePort State       AppliedSetting
+------------                        --------- -------------                       ---------- -----       --------------
+::1                                 53        ::                                  0          Listen
+127.0.0.1                           53        0.0.0.0                             0          Listen
+
+
+
+powershell -ExecutionPolicy Bypass Get-NetTCPConnection -LocalPort 5353
+
+LocalAddress                        LocalPort RemoteAddress                       RemotePort State       AppliedSetting
+------------                        --------- -------------                       ---------- -----       --------------
+::1                                 5353      ::                                  0          Listen
+127.0.0.1                           5353      0.0.0.0                             0          Listen
+
+Test chain with
+
+https://one.one.one.one/help/ (CloudFlare 1.1.1.1)
+https://dnsleaktest.com/
+https://dnscheck.tools/
+
+*
+To list current dependencies:
+
+sc qc dnscrypt-proxy
+
+To remove all dependencies:
+
+sc config dnscrypt-proxy depend= /
+
+Dependency on one other service:
+
+sc config dnscrypt-proxy depend= unbound
+
+Above means that ServiceA will not start until ServiceB has started. If you stop ServiceB, ServiceA will stop automatically.
+
+Dependency on multiple other services:
+
+sc config ServiceA depend= ServiceB/ServiceC/ServiceD/"Service Name With Spaces"
+
+Above means that ServiceA will not start until ServiceB, ServiceC, and ServiceD have all started. If you stop any of ServiceB, ServiceC, or ServiceD, ServiceA will stop automatically.
+
+*
+You can add service dependencies by adding the "DependOnService" value to the service in the registry using the regedit command, the service can be found under HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<Service name>.
+
+reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dnscrypt-proxy
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dnscrypt-proxy
+    Type    REG_DWORD    0x10
+    Start    REG_DWORD    0x2
+    ErrorControl    REG_DWORD    0x0
+    ImagePath    REG_EXPAND_SZ    C:\Users\Bruno\LocalDnsApps\dnscrypt-proxy\dnscrypt-proxy.exe -config dnscrypt-proxy.toml
+    DisplayName    REG_SZ    DNSCrypt client proxy
+    ObjectName    REG_SZ    LocalSystem
+    Description    REG_SZ    Encrypted/authenticated DNS proxy
+    DelayedAutostart    REG_DWORD    0x1
+    DependOnService    REG_MULTI_SZ    unbound
+	
+reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\unbound
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\unbound
+    Type    REG_DWORD    0x10
+    Start    REG_DWORD    0x3
+    ErrorControl    REG_DWORD    0x1
+    ImagePath    REG_EXPAND_SZ    "C:\Users\Bruno\LocalDnsApps\unbound\unbound.exe" -c "C:\Users\Bruno\LocalDnsApps\unbound\service.conf" -w service
+    DisplayName    REG_SZ    Unbound DNS validator
+    ObjectName    REG_SZ    LocalSystem
+    DelayedAutostart    REG_DWORD    0x1
+
+Select the service subkey, right-click the service name, and then select "New" -> "Multi-String Value" (REG_MULTI_SZ)
+
+Create a new value name "DependOnService" (without the quotation marks), and then click OK.
+
+When the Data dialog box appears, type the name or names of the services that you prefer to start before this service with one entry for each line, and then click OK.
+*
+Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\LanmanWorkstation' -Name DependOnService -Value @('Bowser','MRxSmb20','NSI')
+
+sc config scardsvr start= auto depend= "netlogon"
