@@ -13,6 +13,12 @@ if (-not (Test-Path $LogPath)) {
 # Unix epoch start (always UTC)
 $epochStart = [datetime]::new(1970, 1, 1, 0, 0, 0, [datetimekind]::Utc)
 
+Write-Host Console CodePage
+Write-Host [Console]::OutputEncoding.CodePage
+
+Write-Host CodePage
+Write-Host [Console]::OutputEncoding.CodePage
+
 Write-Host "`n🪵 Unbound Log (Last $Lines lines, LOCAL time):" -ForegroundColor Cyan -BackgroundColor DarkGray
 Write-Host "────────────────────────────────────────────────────────────" -ForegroundColor Gray
 

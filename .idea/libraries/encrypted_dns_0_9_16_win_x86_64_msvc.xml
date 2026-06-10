@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="encrypted-dns_0.9.16_win-x86_64-msvc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/encrypted-dns_0.9.16_win-x86_64/encrypted-dns_0.9.16_win-x86_64-msvc.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

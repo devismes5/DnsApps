@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="DnsApps">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/doh-proxy_0.9.16_windows-x86_64.zip!/" />
+      <root url="jar://$PROJECT_DIR$/unbound-1.25.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/dnscrypt-proxy-win64-2.1.16.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,11 @@
+unbound-1.25.1/unbound.log
+*.log
+encrypted-dns_0.9.16_win-x86_64/
+encrypted-dns/
+doh-proxy_0.9.16_windows-x86_64/doh-proxy/
+dnscrypt-proxy-win64-2.1.16/win64/
+doh-proxy_0.9.16_windows-x86_64.zip
+dnscrypt-proxy-win64-2.1.16.zip
+unbound-1.25.1.zip
+osterholm.nl.pem
+osterholm.nl-key.pem
