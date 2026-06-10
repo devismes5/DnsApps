@@ -2,7 +2,7 @@
 
 ### The reason for the validator-cum-proxy set-up and the attendant coding effort
 
-I am not at all obsessed by privacy but  on my Acer Aspire 5 notebook I have installed both DNSCrypt-proxy v2.1.16 and Unbound v1.25.1, both the latest versions as of May 2026.
+I am not at all obsessed by privacy but  on my Acer Aspire 5 notebook I have installed both [DNSCrypt-proxy v2.1.16](https://github.com/DNSCrypt/dnscrypt-proxy/releases) and [Unbound v1.25.1](https://nlnetlabs.nl/projects/unbound/download/), both the latest versions as of May 2026.
 
 To quote a comment by Patrick Mevzek (Sep 13, 2022):
 
@@ -28,8 +28,17 @@ As shown in the ArchWiki guide, the standard and recommended setup is:
 
 DNSCrypt-proxy handles encryption (DoH, DNSCrypt) and forwards to the upstream resolver.
 
+### Docs:
 
-Below I am using the imperative mode for simplicity :)
+- [How to setup your own DNSCrypt server in less than 10 minutes · DNSCrypt/dnscrypt-proxy Wiki · GitHub](https://github.com/dnscrypt/dnscrypt-proxy/wiki/How-to-setup-your-own-DNSCrypt-server-in-less-than-10-minutes)
+
+- [Unbound v1.25.1 unbound.conf documentation](https://unbound.docs.nlnetlabs.nl/en/latest/manpages/unbound.conf.html)
+
+[unbound - Pi-hole documentation](https://docs.pi-hole.net/guides/dns/unbound/)
+
+[boot - Run a script on start up on Windows 10 - Super User](https://superuser.com/questions/954950/run-a-script-on-start-up-on-windows-10)
+
+Below I am using the imperative mode for simplicity and conciseness :)
 
 ---
 After forking the code create symbolic links to the folders that had their version numbers in their names.
@@ -189,7 +198,7 @@ My contribution: restart-unbound.cmd
 
 The DNSCrypt-proxy service needs to be running for Unbound to forward to it. DNSCrypt client proxy does not write to the EventLog making it impossible to latch unbound onto a service start-up event.
 
-Unbound needs certificates to forward traffic, so install MkCert v1.4.4, create `localhost+2-key.pem` and `localhost+2.pem` running `mkcert -client` (i.e. "Generate a certificate for client authentication.")
+Unbound needs certificates to forward traffic, so install [MkCert v1.4.4](https://github.com/FiloSottile/mkcert), create `localhost+2-key.pem` and `localhost+2.pem` running `mkcert -client` (i.e. "Generate a certificate for client authentication.")
 To see all MkCert options: `mkcert -help`
 
 To check if the services has been installed:
@@ -255,6 +264,8 @@ Processor(s):                  1 Processor(s) Installed.
 ### Test chain with tests
 
 https://one.one.one.one/help/ (CloudFlare 1.1.1.1)
+
+https://www.cloudflare.com/ssl/encrypted-sni/
 
 https://dnsleaktest.com/
 
