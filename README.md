@@ -121,7 +121,7 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole" /v LocalActivationTimeout /t
 reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
 ```
 </details>
----
+
 Having created the symlinks go through the usual steps recommended in the project docs:
 
 <details>
@@ -274,5 +274,4 @@ https://dnscheck.tools/
 | **DNS Server Identification** | Weight: 10% | Warning | Score: 30/100 | DNS resolver identified: M247 Ltd (AS9009), Germany. This appears to be an ISP DNS server, which typically logs queries. |
 
 **Your DNS Privacy Grade: C — 64 / 100**
-
 [DNS Privacy Test results as of June 7, 2026](./dns-privacy-test.md)
