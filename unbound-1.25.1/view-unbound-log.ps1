@@ -12,12 +12,25 @@ if (-not (Test-Path $LogPath)) {
 
 # Unix epoch start (always UTC)
 $epochStart = [datetime]::new(1970, 1, 1, 0, 0, 0, [datetimekind]::Utc)
+Write-Host CurrentDirectory
+[System.Environment]::CurrentDirectory
+Write-Host Path
+(Get-Location).Path
 
-Write-Host Console CodePage
-Write-Host [Console]::OutputEncoding.CodePage
+$outputCodePage = [Console]::OutputEncoding.CodePage
+Write-Host Console CodePage $outputCodePage
+Write-Host chcp
+chcp
 
-Write-Host CodePage
-Write-Host [Console]::OutputEncoding.CodePage
+# Source - https://stackoverflow.com/a/57134096
+# Posted by mklement0, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-06-10, License - CC BY-SA 4.0
+
+$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+Write-Host OutputEncoding $OutputEncoding
+
+$outputCodePage = [Console]::OutputEncoding.CodePage
+Write-Host Now Console CodePage $outputCodePage
 
 Write-Host "`n🪵 Unbound Log (Last $Lines lines, LOCAL time):" -ForegroundColor Cyan -BackgroundColor DarkGray
 Write-Host "────────────────────────────────────────────────────────────" -ForegroundColor Gray
