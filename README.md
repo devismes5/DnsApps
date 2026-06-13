@@ -25,15 +25,15 @@ Unbound is a full-featured, local DNS resolver and cache. It can be configured t
 
 To learn more about Unbound:
 
-- [https://nlnetlabs.nl/projects/unbound/download/](The Unbound project at nlnetlabs.nl)
+- [The Unbound project at nlnetlabs.nl](https://nlnetlabs.nl/projects/unbound/download/)
 
-- [https://unbound.docs.nlnetlabs.nl/en/latest/manpages/unbound.conf.html](Unbound v1.25.1 unbound.conf documentation)
+- [Unbound v1.25.1 unbound.conf documentation](https://unbound.docs.nlnetlabs.nl/en/latest/manpages/unbound.conf.html)
 
-- [https://docs.pi-hole.net/guides/dns/unbound/](unbound - Pi-hole documentation)
+- [unbound - Pi-hole documentation](https://docs.pi-hole.net/guides/dns/unbound/)
 
-- [https://github.com/unboundsecurity/unbound-integration/tree/master/public-key](Public key for Unbound integration)
+- [Public key for Unbound integration](https://github.com/unboundsecurity/unbound-integration/tree/master/public-key)
 
-- [https://gist.github.com/jfrobbins/5c2dbceb81c33afc5b0bcbe0d3343692](jfrobbins/gpg-setup-and-use-guide.md)
+- [jfrobbins/gpg-setup-and-use-guide.md](https://gist.github.com/jfrobbins/5c2dbceb81c33afc5b0bcbe0d3343692)
 
 ### Installation
 
