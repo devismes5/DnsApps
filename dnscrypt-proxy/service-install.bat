@@ -19,7 +19,7 @@ goto :end
 
 :admin
 pushd "%~dp0"
-dnscrypt-proxy.exe -service install
+..\..\DnsApps\dnscrypt-proxy\dnscrypt-proxy.exe -service install -config .\dnscrypt-proxy.toml
 dnscrypt-proxy.exe -service start
 popd
 echo.

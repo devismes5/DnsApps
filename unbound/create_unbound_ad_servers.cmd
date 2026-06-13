@@ -6,8 +6,7 @@ rem Written by Y.Voinov (c) 2014
 rem Note: Wget required!
 
 rem Variables
-set prefix="C:\Users\Bruno\LocalDnsApps"
-set dst_dir=%prefix%\Unbound
+set dst_dir=%~dp0
 set work_dir=%TEMP%
 set list_addr="http://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=1&startdate%5Bday%5D=&startdate%5Bmonth%5D=&startdate%5Byear%5D="
 

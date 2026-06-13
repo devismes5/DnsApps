@@ -1,61 +1,31 @@
-[2026-06-13 00:39:59] [NOTICE] dnscrypt-proxy 2.1.16
-[2026-06-13 00:39:59] [NOTICE] Network connectivity detected
-[2026-06-13 00:39:59] [NOTICE] Now listening to 127.0.0.1:5353 [UDP]
-[2026-06-13 00:39:59] [NOTICE] Now listening to 127.0.0.1:5353 [TCP]
-[2026-06-13 00:39:59] [NOTICE] Now listening to [::1]:5353 [UDP]
-[2026-06-13 00:39:59] [NOTICE] Now listening to [::1]:5353 [TCP]
-[2026-06-13 00:39:59] [NOTICE] Now listening to https://127.0.0.1:3000/dns-query [DoH]
-[2026-06-13 00:39:59] [NOTICE] Source [public-resolvers] loaded
-[2026-06-13 00:39:59] [NOTICE] Source [relays] loaded
-[2026-06-13 00:39:59] [NOTICE] Source [dnscry-pt-resolvers] loaded
-[2026-06-13 00:39:59] [NOTICE] Anonymized DNS: routing [cs-de] via [sdns://gQ8xNDYuNzAuODIuMzo0NDM sdns://gQ00NS4xNDcuNTEuMTIz]
-[2026-06-13 00:39:59] [NOTICE] Anonymized DNS: routing [cs-dus] via [sdns://gRI4OS4xNjMuMjIxLjE4MTo0NDM sdns://gQw5My45NS4xMTUuMjE sdns://gRExODUuMTA3LjgwLjg0OjQ0Mw sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
-[2026-06-13 00:39:59] [NOTICE] Anonymized DNS: routing [dct-de2] via [sdns://gRIyMTIuNDcuMjI4LjEzNjo0NDM sdns://gRMxNjMuMTcyLjE4MC4xMjU6NDQz sdns://gQw5My45NS4xMTUuMjE]
-[2026-06-13 00:39:59] [NOTICE] Anonymized DNS: routing [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU sdns://gQw5My45NS4xMTUuMjE]
-[2026-06-13 00:39:59] [NOTICE] Anonymized DNS: routing everything else via [sdns://AQcAAAAAAAAADTUuMTc1LjE4MC4xNzEg_5w5GH6bnmpKPcqtR58x5VHe2qD5-mSZeGIsqaukhr4ZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA sdns://AQcAAAAAAAAADTM3LjExNC41OC4xMTUgWAo_MyYybZGGBQKsA41WpC5TjjpfvgviHteGEKBXNIwZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA sdns://AQcAAAAAAAAADTExOC45MS4xODQuODkgBVOdxEWkG9yUyaviAaCbPJMqAG36WK_rVLkYvKSqCgwZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA]
-[2026-06-13 00:39:59] [NOTICE] Firefox workaround initialized
-[2026-06-13 00:39:59] [NOTICE] Hot reload is disabled
-[2026-06-13 00:39:59] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ00NS4xNDcuNTEuMTIz]
-[2026-06-13 00:39:59] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gQw5My45NS4xMTUuMjE]
-[2026-06-13 00:39:59] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRI4OS4xNjMuMjIxLjE4MTo0NDM]
-[2026-06-13 00:39:59] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw5My45NS4xMTUuMjE]
-[2026-06-13 00:39:59] [NOTICE] [cs-de] OK (DNSCrypt) - rtt: 43ms
-[2026-06-13 00:39:59] [NOTICE] [dct-de2] OK (DNSCrypt) - rtt: 60ms
-[2026-06-13 00:39:59] [NOTICE] [dnscry.pt-luxembourg-ipv4] OK (DNSCrypt) - rtt: 72ms
-[2026-06-13 00:40:04] [NOTICE] [cs-dus] OK (DNSCrypt) - rtt: 34ms
-[2026-06-13 00:40:04] [NOTICE] Sorted latencies:
-[2026-06-13 00:40:04] [NOTICE] -    34ms cs-dus
-[2026-06-13 00:40:04] [NOTICE] -    43ms cs-de
-[2026-06-13 00:40:04] [NOTICE] -    60ms dct-de2
-[2026-06-13 00:40:04] [NOTICE] -    72ms dnscry.pt-luxembourg-ipv4
-[2026-06-13 00:40:04] [NOTICE] Server with the lowest initial latency: cs-dus (rtt: 34ms), live servers: 4
-[2026-06-13 04:40:04] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gRIyMTIuNDcuMjI4LjEzNjo0NDM]
-[2026-06-13 04:40:04] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw5My45NS4xMTUuMjE]
-[2026-06-13 04:40:04] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
-[2026-06-13 04:40:04] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ00NS4xNDcuNTEuMTIz]
-[2026-06-13 04:40:04] [NOTICE] Sorted latencies:
-[2026-06-13 04:40:04] [NOTICE] -    45ms cs-de
-[2026-06-13 04:40:04] [NOTICE] -    56ms cs-dus
-[2026-06-13 04:40:04] [NOTICE] -    74ms dct-de2
-[2026-06-13 04:40:04] [NOTICE] -    74ms dnscry.pt-luxembourg-ipv4
-[2026-06-13 04:40:04] [NOTICE] Server with the lowest initial latency: cs-de (rtt: 45ms), live servers: 4
-[2026-06-13 08:40:04] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ8xNDYuNzAuODIuMzo0NDM]
-[2026-06-13 08:40:04] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU]
-[2026-06-13 08:40:04] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gQw5My45NS4xMTUuMjE]
-[2026-06-13 08:40:04] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRExODUuMTA3LjgwLjg0OjQ0Mw]
-[2026-06-13 08:40:10] [NOTICE] Sorted latencies:
-[2026-06-13 08:40:10] [NOTICE] -    52ms cs-de
-[2026-06-13 08:40:10] [NOTICE] -   117ms cs-dus
-[2026-06-13 08:40:10] [NOTICE] -   118ms dnscry.pt-luxembourg-ipv4
-[2026-06-13 08:40:10] [NOTICE] -   149ms dct-de2
-[2026-06-13 08:40:10] [NOTICE] Server with the lowest initial latency: cs-de (rtt: 52ms), live servers: 4
-[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gRMxNjMuMTcyLjE4MC4xMjU6NDQz]
-[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU]
-[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
-[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ00NS4xNDcuNTEuMTIz]
-[2026-06-13 12:40:10] [NOTICE] Sorted latencies:
-[2026-06-13 12:40:10] [NOTICE] -    51ms dnscry.pt-luxembourg-ipv4
-[2026-06-13 12:40:10] [NOTICE] -    58ms dct-de2
-[2026-06-13 12:40:10] [NOTICE] -    66ms cs-dus
-[2026-06-13 12:40:10] [NOTICE] -    70ms cs-de
-[2026-06-13 12:40:10] [NOTICE] Server with the lowest initial latency: dnscry.pt-luxembourg-ipv4 (rtt: 51ms), live servers: 4
+[2026-06-13 16:38:52] [NOTICE] dnscrypt-proxy 2.1.16
+[2026-06-13 16:38:52] [NOTICE] Network connectivity detected
+[2026-06-13 16:38:52] [NOTICE] Now listening to 127.0.0.1:5353 [UDP]
+[2026-06-13 16:38:52] [NOTICE] Now listening to 127.0.0.1:5353 [TCP]
+[2026-06-13 16:38:52] [NOTICE] Now listening to [::1]:5353 [UDP]
+[2026-06-13 16:38:52] [NOTICE] Now listening to [::1]:5353 [TCP]
+[2026-06-13 16:38:52] [NOTICE] Now listening to https://127.0.0.1:3000/dns-query [DoH]
+[2026-06-13 16:38:52] [NOTICE] Source [dnscry-pt-resolvers] loaded
+[2026-06-13 16:38:52] [NOTICE] Source [public-resolvers] loaded
+[2026-06-13 16:38:52] [NOTICE] Source [relays] loaded
+[2026-06-13 16:38:52] [NOTICE] Anonymized DNS: routing [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU sdns://gQw5My45NS4xMTUuMjE]
+[2026-06-13 16:38:52] [NOTICE] Anonymized DNS: routing [cs-de] via [sdns://gQ8xNDYuNzAuODIuMzo0NDM sdns://gQ00NS4xNDcuNTEuMTIz]
+[2026-06-13 16:38:52] [NOTICE] Anonymized DNS: routing [cs-dus] via [sdns://gRI4OS4xNjMuMjIxLjE4MTo0NDM sdns://gQw5My45NS4xMTUuMjE sdns://gRExODUuMTA3LjgwLjg0OjQ0Mw sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
+[2026-06-13 16:38:52] [NOTICE] Anonymized DNS: routing [dct-de2] via [sdns://gRIyMTIuNDcuMjI4LjEzNjo0NDM sdns://gRMxNjMuMTcyLjE4MC4xMjU6NDQz sdns://gQw5My45NS4xMTUuMjE]
+[2026-06-13 16:38:52] [NOTICE] Anonymized DNS: routing everything else via [sdns://AQcAAAAAAAAADTUuMTc1LjE4MC4xNzEg_5w5GH6bnmpKPcqtR58x5VHe2qD5-mSZeGIsqaukhr4ZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA sdns://AQcAAAAAAAAADTM3LjExNC41OC4xMTUgWAo_MyYybZGGBQKsA41WpC5TjjpfvgviHteGEKBXNIwZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA sdns://AQcAAAAAAAAADTExOC45MS4xODQuODkgBVOdxEWkG9yUyaviAaCbPJMqAG36WK_rVLkYvKSqCgwZMi5kbnNjcnlwdC1jZXJ0LmRuc2NyeS5wdA]
+[2026-06-13 16:38:52] [NOTICE] Firefox workaround initialized
+[2026-06-13 16:38:52] [NOTICE] Hot reload is disabled
+[2026-06-13 16:38:52] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gRMxNjMuMTcyLjE4MC4xMjU6NDQz]
+[2026-06-13 16:38:52] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRI4OS4xNjMuMjIxLjE4MTo0NDM]
+[2026-06-13 16:38:52] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU]
+[2026-06-13 16:38:52] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ00NS4xNDcuNTEuMTIz]
+[2026-06-13 16:38:52] [NOTICE] [cs-de] OK (DNSCrypt) - rtt: 50ms
+[2026-06-13 16:38:52] [NOTICE] [dnscry.pt-luxembourg-ipv4] OK (DNSCrypt) - rtt: 66ms
+[2026-06-13 16:38:52] [NOTICE] [dct-de2] OK (DNSCrypt) - rtt: 69ms
+[2026-06-13 16:38:58] [NOTICE] [cs-dus] OK (DNSCrypt) - rtt: 32ms
+[2026-06-13 16:38:58] [NOTICE] Sorted latencies:
+[2026-06-13 16:38:58] [NOTICE] -    32ms cs-dus
+[2026-06-13 16:38:58] [NOTICE] -    50ms cs-de
+[2026-06-13 16:38:58] [NOTICE] -    66ms dnscry.pt-luxembourg-ipv4
+[2026-06-13 16:38:58] [NOTICE] -    69ms dct-de2
+[2026-06-13 16:38:58] [NOTICE] Server with the lowest initial latency: cs-dus (rtt: 32ms), live servers: 4

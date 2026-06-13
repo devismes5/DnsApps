@@ -174,7 +174,7 @@ echo Starting service '%SERVICE_NAME%'...
 :: reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\unbound" /t REG_EXPAND_SZ /v ImagePath /d "\"C:\DnsApps\unbound\unbound.exe\" -c \"C:\DnsApps\unbound\service.conf\" -w service" /f
 for /F "tokens=3*" %%A in ('reg query "%REG_PATH%" /v "ImagePath"') DO (echo Service command: %%A %%B)
 :: Start the Windows service instead of using unbound-control
-echo Started %LOG_FILE_PATH%
+echo Started %SERVICE_NAME%
 > "%LOG_FILE_PATH%" echo. && net start %SERVICE_NAME% 
 ::1>nul
 echo Started %SERVICE_NAME% [%ERRORLEVEL%] [%TAIL_LOG%]
