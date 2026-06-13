@@ -49,3 +49,13 @@
 [2026-06-13 08:40:10] [NOTICE] -   118ms dnscry.pt-luxembourg-ipv4
 [2026-06-13 08:40:10] [NOTICE] -   149ms dct-de2
 [2026-06-13 08:40:10] [NOTICE] Server with the lowest initial latency: cs-de (rtt: 52ms), live servers: 4
+[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [dct-de2] via [sdns://gRMxNjMuMTcyLjE4MC4xMjU6NDQz]
+[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [dnscry.pt-luxembourg-ipv4] via [sdns://gQw0NS44MC4yMDkuNTU]
+[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [cs-dus] via [sdns://gRMxODUuNjYuMTQzLjE3ODo1MzUz]
+[2026-06-13 12:40:10] [NOTICE] Anonymizing queries for [cs-de] via [sdns://gQ00NS4xNDcuNTEuMTIz]
+[2026-06-13 12:40:10] [NOTICE] Sorted latencies:
+[2026-06-13 12:40:10] [NOTICE] -    51ms dnscry.pt-luxembourg-ipv4
+[2026-06-13 12:40:10] [NOTICE] -    58ms dct-de2
+[2026-06-13 12:40:10] [NOTICE] -    66ms cs-dus
+[2026-06-13 12:40:10] [NOTICE] -    70ms cs-de
+[2026-06-13 12:40:10] [NOTICE] Server with the lowest initial latency: dnscry.pt-luxembourg-ipv4 (rtt: 51ms), live servers: 4

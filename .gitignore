@@ -14,3 +14,9 @@ dnscrypt-proxy-win64-2.1.16/
 unbound-1.25.1/
 unbound/unbound.log
 unbound/root.key
+unbound/root.key
+unbound-1.25.1/root.key
+unbound/root.key
+unbound-1.25.1/root.key
+dnscrypt-proxy/dnscrypt-proxy.log
+dnscrypt-proxy-win64-2.1.16/win64/dnscrypt-proxy.log
